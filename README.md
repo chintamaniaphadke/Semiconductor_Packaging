@@ -206,35 +206,59 @@ We will be taking an already available FC-BGA package within the Icepak Toolkit 
 
   - **Step 1 : Open AEDT and launch Icepak**
 
+| ![](./Images/Mod3_1.png) |
+|:---|
 
   - **Step 2.1 : Create a Flipchip BGA Package**
     - `Icepak -> Toolkit -> Geometry -> Packages -> Flipchip_BGA`
-
+   
+| ![](./Images/Mod3_6.png) |
+|:---|
 
   - **Step 2.2 : The Package Configuration window opens up**
     - The dimensions and other aspects of the package, substrate, die, die underfill and the solder balls can be configured here.
     - Once configured, click OK to generate the package model. 
 
+| ![](./Images/Mod3_2.png)  | ![](./Images/Mod3_3.png)  |
+|:---|:---|
+| ![](./Images/Mod3_4.png)  | ![](./Images/Mod3_5.png)  |
+
+| Package generated in Icepak <br> ![](./Images/Mod3_7.png) |
+|:---|
 
   - **Step 3 : Explore the 3D Package Model Structure in Icepak**
+
+| **Ball Group** <br> ![](./Images/Mod3_10.png) | **Substrate** <br> ![](./Images/Mod3_11.png) |
+|:---|:---|
+| **Die Underfill** <br> ![](./Images/Mod3_12.png) | **Die** <br> ![](./Images/Mod3_9.png) |
 
 ### 3.3 - Material Definitions And Thermal Power Sources
 
   - **Step 4 : Review and modify the material and definition types for the different components of the model.**
 
+| Material Definitions <br> ![](./Images/Mod3_16.png) |
+|:---|
 
   - **Step 5.1 : Add/ Assign Source Thermal Model for Die**
     - In "Project Manager" sub-window, expand Thermal section and open the **_BGA1_die_source_** and configure the thermal condition as shown below:
+
+| Source Thermal Model for Die <br> ![](./Images/Mod3_17.png) |
+|:---|
 
 - **Step 5.2 : Add/ Assign Source Thermal Model for Substrate**
     - To add a thermal boundary condition for the substrate, right click on **_Flipchip_BGA1_substrate_** under `Models -> Flipchip_BGA1_Group -> Solids` and assign a Thermal Source.
     - Set the thermal condition on the substrate to Fixed Temperatue and the temperature as Ambient.
 
+| Add Source Thermal Model for Substrate <br> ![](./Images/Mod3_18.png) | ![](./Images/Mod3_19.png) |
+|:---|:---|
 
   - **Step 6 : Add Thermal monitors for the different components**
     - To add a Thermal monitor to the substrate, right click on the **_Flipchip_BGA1_substrate_** under `Models -> Flipchip_BGA1_Group -> Solids` and then choose `Assign Monitor -> Point...`
     - In the sub-window that appears, select **Temperature**
     - Repeat the same to add thermal monitors for the die and the die-underfill.
+   
+| Add Thermal monitor for Substrate <br> ![](./Images/Mod3_20.png) | 
+|:---|
 
 ### 3.4 - Meshing And Running The Thermal Analysis
 
@@ -245,15 +269,29 @@ We will be taking an already available FC-BGA package within the Icepak Toolkit 
 
   - **Step 7.2 : Review Mesh Quality metrics**
     - Once the mesh is generated, review the quality metrics of the generated mesh such as Face Alignment, Skewness and Volume.
+   
+| **Mesh Generation** <br> ![](./Images/Mod3_22.png) |
+|:---|
+
+| **Mesh Quality - Face Alignment** ![](./Images/Mod3_23.png) | **Mesh Quality - Skewness** ![](./Images/Mod3_24.png) |
+|:---|:---|
+| **Mesh Quality - Volume** ![](./Images/Mod3_25.png) | |
+
 
   - **Step 8 : Add Thermal Analysis**
     - Under `Project Manager`, right click on `Analysis and then, select Add Analysis Setup` and configure the solver settings as required. (We will choose all default settings for our analysis)
+   
+| **Add Analysis Setup** <br> ![](./Images/Mod3_26.png) |
+|:---|
 
 ### 3.5 - Viewing Results And Exploring Other Package Types
 
   - **Step 9 : Now, Validate the Simulation setup**
     - Click on the **Validate** button in the top ribbon
     - Ensure all checks are validated successfully
+   
+| **Validate the setup** <br> ![](./Images/Mod3_28.png) |
+|:---|
 
   - **Step 10: Run the simulation and plot the temperature map**
     - Click on **Analyze All** button in the top ribbon
@@ -264,6 +302,10 @@ We will be taking an already available FC-BGA package within the Icepak Toolkit 
       - Specify Name, Folder
       - Plot on Surface only
       - Surface Smoothing -> Enable Gaussian Smoothing
+     
+| **Plot Fields** ![](./Images/Mod3_29.png) |
+|:---|
+| **Field Plot** ![](./Images/Mod3_30.png) |
 
 
 # Module 4: Ensuring Package Reliability – Testing and Performance Evaluation
