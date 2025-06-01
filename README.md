@@ -271,12 +271,12 @@ We will be taking an already available FC-BGA package within the Icepak Toolkit 
     - Save the project if prompted and wait for the mesh generation to get completed.
     - Take a note of any error(s) and warning(s) that are shown and ignore/ take steps to debug & fix the issue(s) as required.
 
-  - **Step 7.2 : Review Mesh Quality metrics**
-    - Once the mesh is generated, review the quality metrics of the generated mesh such as Face Alignment, Skewness and Volume.
-   
 | **Mesh Generation** <br> ![](./Images/Mod3_22.png) |
 |:---|
 
+  - **Step 7.2 : Review Mesh Quality metrics**
+    - Once the mesh is generated, review the quality metrics of the generated mesh such as Face Alignment, Skewness and Volume.
+   
 | **Mesh Quality - Face Alignment** ![](./Images/Mod3_23.png) | **Mesh Quality - Skewness** ![](./Images/Mod3_24.png) |
 |:---|:---|
 | **Mesh Quality - Volume** ![](./Images/Mod3_25.png) | |
