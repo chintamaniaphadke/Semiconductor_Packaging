@@ -110,7 +110,6 @@ Choosing the optimal package involves trade-offs specific to the target applicat
 | ![](./Images/Mod1_5.PNG) |
 |:---:|
 
-
 # Module 2: From Silicon Wafer to Complete Package – Assembly and Fabrication Processes
 
 This module walks through the full manufacturing and packaging workflow, emphasizing the practical stages from wafer prep to packaging completion.
@@ -125,6 +124,9 @@ The journey from chip design to a packaged product spans multiple players:
 - **Board Assembly**: Packaged ICs are mounted on boards and validated.
 - **System Integration**: Devices like smartphones, PCs, and servers are assembled.
 
+| ![](./Images/Mod2_1.PNG) |
+|:---:|
+
 **ATMP (Assembly, Test, Marking, Packaging) Facility Layout:**
 
 - **Material Prep**: Wafer and component storage.
@@ -135,6 +137,9 @@ The journey from chip design to a packaged product spans multiple players:
 ## 2.2 Wafer Preparation – Grinding and Dicing
 
 Inside the ATMP cleanroom:
+
+| ![](./Images/Mod2_2.PNG) |
+|:---:|
 
 - **Incoming Inspection**: Wafers are examined for defects.
 - **Protective Tape Lamination**: Applied to the front side for safety during grinding.
@@ -148,14 +153,23 @@ Inside the ATMP cleanroom:
 
 ## 2.3 Wire Bond Assembly – Die to Molding Process
 
+| ![](./Images/Mod2_3.PNG) |
+|:---:|
+
 - **Die Attach**: Die is fixed to substrate with epoxy.
 - **Epoxy Curing**: Ensures strong adhesion.
 - **Wire Bonding**: Gold or aluminum wires connect die to substrate pads.
+| ![](./Images/Mod2_4.PNG) |
+|:---:|
+
 - **Encapsulation**: Mold compound protects the assembly.
 - **Laser Marking**: Identification codes added.
 - **Final Singulation**: Dicing separates finished packages.
 
 ## 2.4 Flip Chip Technology – Face-Down Die Integration
+
+| ![](./Images/Mod2_5.PNG) |
+|:---:|
 
 - **Solder Bump Formation**: On the die for pad connection.
 - **Chip Flipping and Placement**: Die is inverted and aligned with the substrate.
@@ -166,12 +180,18 @@ Inside the ATMP cleanroom:
 
 ## 2.5 Wafer-Level Packaging (WLP)
 
+| ![](./Images/Mod2_6.PNG) |
+|:---:|
+
 In WLP, the entire packaging is done before wafer dicing:
 
 - **Fan-In WLP**: Bumps are within die footprint.
 - **Fan-Out WLP (FO-WLP)**: Uses RDLs to expand the I/O area.
 
 **FO-WLP Process Flow:**
+
+| ![](./Images/Mod1_5.PNG) |
+|:---:|
 
 - **Die Selection**: Only known-good dies are used.
 - **Reconstitution**: Dies are placed on a carrier and molded.
