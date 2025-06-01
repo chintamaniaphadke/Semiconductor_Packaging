@@ -159,9 +159,6 @@ Inside the ATMP cleanroom:
 - **Die Attach**: Die is fixed to substrate with epoxy.
 - **Epoxy Curing**: Ensures strong adhesion.
 - **Wire Bonding**: Gold or aluminum wires connect die to substrate pads.
-| ![](./Images/Mod2_4.PNG) |
-|:---:|
-
 - **Encapsulation**: Mold compound protects the assembly.
 - **Laser Marking**: Identification codes added.
 - **Final Singulation**: Dicing separates finished packages.
@@ -189,9 +186,6 @@ In WLP, the entire packaging is done before wafer dicing:
 - **Fan-Out WLP (FO-WLP)**: Uses RDLs to expand the I/O area.
 
 **FO-WLP Process Flow:**
-
-| ![](./Images/Mod1_5.PNG) |
-|:---:|
 
 - **Die Selection**: Only known-good dies are used.
 - **Reconstitution**: Dies are placed on a carrier and molded.
