@@ -14,12 +14,18 @@ Semiconductor packaging is the final step in device fabrication where a delicate
 - **Structural Support**: Anchors the die physically within a larger electronic system.
 - **Heat Dissipation**: Helps transfer heat away from the chip to maintain performance and prevent damage.
 
+| ![](./Images/Mod1_1.PNG) |
+|:---:|
+
 **Semiconductor Ecosystem Players:**
 
 - **Fabless companies** (e.g., Apple, Qualcomm) design chips.
 - **Foundries** (e.g., TSMC, GlobalFoundries) manufacture them.
 - **OSATs** (Outsourced Semiconductor Assembly and Test) like ASE and Amkor handle packaging and testing.
 - **IDMs** (Integrated Device Manufacturers) such as Intel manage everything from design to testing in-house.
+
+| ![](./Images/Mod1_2.PNG) |
+|:---:|
 
 ## 1.2 Basic Package Needs and Common Architectures
 
@@ -47,6 +53,9 @@ Selecting a suitable package depends on several interlinked requirements:
 - **Through-Hole**: DIP, SIP, PGA
 - **Surface Mount**: QFP, QFN, LGA, BGA
 - **Advanced Types**: PoP, MCM, SiP, CoWoS
+
+| ![](./Images/Mod1_3.PNG) |
+|:---:|
 
 ## 1.3 Evolution from Traditional to Complex Multi-Chip Architectures
 
@@ -83,6 +92,9 @@ Each serves different markets and performance demands, from basic electronics to
 - **2.5D**: Multiple dies mounted side-by-side on an interposer.
 - **3D**: Dies stacked vertically using Through-Silicon Vias (TSVs).
 
+| ![](./Images/Mod1_4.PNG) |
+|:---:|
+
 ## 1.5 Comparative Packaging Evaluation
 
 This section helps assess package types based on:
@@ -94,6 +106,10 @@ This section helps assess package types based on:
 - Reliability
 
 Choosing the optimal package involves trade-offs specific to the target application, system, and business case.
+
+| ![](./Images/Mod1_5.PNG) |
+|:---:|
+
 
 # Module 2: From Silicon Wafer to Complete Package – Assembly and Fabrication Processes
 
