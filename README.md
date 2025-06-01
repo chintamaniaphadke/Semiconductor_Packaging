@@ -274,6 +274,9 @@ This module focuses on the quality assurance and testing stages of semiconductor
 
 Testing is integrated at several stages in both the foundry and OSAT processes.
 
+| ![](./Images/Mod4_1.PNG) |
+|:---:|
+
 **Foundry-Side Testing**:
 
 - **Wafer Probing**: Each die on a wafer is tested using a probe station before it is packaged. Dies are binned based on performance.
@@ -292,12 +295,25 @@ This mimics real-world system environments by running firmware/software on the p
 
 This section details how ICs are evaluated under extreme conditions to guarantee robustness over time.
 
+**Assembly Open and Short Test (AOST)**:
+
+| ![](./Images/Mod4_2.PNG) |
+|:---:|
+
+- Performs quick checks for shorts or opens on package leads or balls post-assembly. It also includes vision inspection and product grading (PGSRT) to identify and sort electrical or physical defects.
+
 **Burn-In Test**:
+
+| ![](./Images/Mod4_3.PNG) |
+|:---:|
 
 - Simulates high-stress conditions to accelerate failure mechanisms.
 - Helps eliminate weak units before shipping.
 
 **Final Test (FT)**:
+
+| ![](./Images/Mod4_4.PNG) |
+|:---:|
 
 - Verifies the chip’s conformance to datasheet specs.
 - Conducted after all packaging steps are complete.
