@@ -389,7 +389,7 @@ The main focus of this lab exercise is to build the complete cross-section of a 
 | 6. Bond Wire | <ul> <li>Material : Gold wire</li> <li>Type: JEDEC 4-point</li> </ul> |
 | 7. Mold Compound | <ul> <li>Material : Epoxy</li> <li>Dimensions : 5mm x 5mm</li> <li>Thickness : 1.2mm</li> </ul> |
 
-  - **Step 1 : Launch AEDT and select Q3D (or Icepak, Maxwell 3D)**
+  - **Step 1 : Launch AEDT and select Q3D**
 
 | ![](./Images/Mod5_1.png) |
 |:---|
