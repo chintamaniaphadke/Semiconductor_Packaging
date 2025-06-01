@@ -1,3 +1,7 @@
+# Semiconductor Packaging
+This GitHub repository documents the [Semiconductor Packaging - Fundamentals of Design and Testing 10-days Workshop](https://www.vlsisystemdesign.com/packaging/) offered by [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/about-us/) attended from 23rd May to 1st June, 2025.  
+
+The workshop provided a comprehensive overview of the semiconductor packaging pipeline, covering foundational concepts, the evolution of packaging technologies, and advanced 2.5D/3D architectures. Interconnect technologies, RDLs, interposers, assembly methods, and package reliability analysis were explored, and hands-on experience was gained in thermal simulations, package design, and modeling using ANSYS tools.
 
 # Module 1: Evolution of Semiconductor Packaging – From Fundamentals to Advanced Integration
 
@@ -377,21 +381,27 @@ The main focus of this lab exercise is to build the complete cross-section of a 
 **<U>Package Specifications:</U>**
 | Component | Properties |
 |:---|:---|
-| 1. Die | <ul> <li>Material : Silicon</li> <li>Dimensions : 3mm x 3mm</li> <li>Die Height : 200 micron</li> </ul> |
-| 2. Substrate | <ul> <li>Material : FR4</li> <li>Dimensions : 5mm x 5mm</li> <li>Height : 500 micron</li> </ul> |
-| 3. Die Attach | <ul> <li>Material : Modified Epoxy</li> <li>Dimensions : 3mm x 3mm</li> <li>Thickness : 100 micron</li> </ul> |
-| 4. Die Bond Pads | <ul> <li>Material : Copper</li> <li>Dimensions : 0.2mm x 0.2mm</li> <li>Thickness : 5 micron</li> </ul> |
-| 5. Substrate Bond Pads | <ul> <li>Material : Copper</li> <li>Dimensions : 0.2mm x 0.2mm</li> <li>Thickness : 10 micron</li> </ul> |
+| 1. Die | <ul> <li>Material : Silicon</li> <li>Dimensions : 3mm x 3mm</li> <li>Die Height : 0.2 mm</li> </ul> |
+| 2. Substrate | <ul> <li>Material : FR4</li> <li>Dimensions : 5mm x 5mm</li> <li>Height : 0.5 mm</li> </ul> |
+| 3. Die Attach | <ul> <li>Material : Modified Epoxy</li> <li>Dimensions : 3mm x 3mm</li> <li>Thickness : 0.1 mm</li> </ul> |
+| 4. Die Bond Pads | <ul> <li>Material : Copper</li> <li>Dimensions : 0.2mm x 0.2mm</li> <li>Thickness : 0.005 mm</li> </ul> |
+| 5. Substrate Bond Pads | <ul> <li>Material : Copper</li> <li>Dimensions : 0.2mm x 0.2mm</li> <li>Thickness : 0.005 mm</li> </ul> |
 | 6. Bond Wire | <ul> <li>Material : Gold wire</li> <li>Type: JEDEC 4-point</li> </ul> |
-| 7. Mold Compound | <ul> <li>Material : Epoxy</li> <li>Thickness : 1.2mm</li> </ul> |
+| 7. Mold Compound | <ul> <li>Material : Epoxy</li> <li>Dimensions : 5mm x 5mm</li> <li>Thickness : 1.2mm</li> </ul> |
 
   - **Step 1 : Launch AEDT and select Q3D (or Icepak, Maxwell 3D)**
+
+| ![](./Images/Mod5_1.png) |
+|:---|
 
 ### 5.2 - Creating the Die and Substrate in AEDT
 
   - **Step 2 : Define the working unit**
     - `Modeler -> Units...`
     - Choose **mm** or **um** as the working unit for creating the model.
+   
+| ![](./Images/Mod5_2.png) |
+|:---|
 
   - **Step 3.1 : Create the Die Geometry**
     - Select the rectangle tool from the ribbon or using the Menus (`Draw -> Rectangle`) to draw a rectangle
@@ -403,11 +413,19 @@ The main focus of this lab exercise is to build the complete cross-section of a 
     - Open up the Properties Dialog box either by double clicking on `Model -> Rectangle1`
     - Rename the geometry to **Die**
     - Choose **Silicon** as the material from the Material Library.
+   
+| **Die Geometry** <br> ![](./Images/Mod5_3.png) | **Die Thickness** ![](./Images/Mod5_4.png) |
+|:---|:---|
+| **Die Material** <br> ![](./Images/Mod5_5.png) |  |
 
   - **Step 4.1 : Create the Substrate Geometry**
     - Draw another rectangle for the substrate (5mm x 5mm) and position (-1, -1, 0) it such that the die is at the center.
     - Set the thickness as -500 microns (-0.5mm). Note the negative sign so as to have the substrate lie beneath the die.
     - Adjust the substrate position along Z-axis to account for the die attach thickness. **Adjusted position: (-1, -1, -0.1)**
+
+| **Substrate Geometry** <br> ![](./Images/Mod5_6.png) | **Substrate Thickness** ![](./Images/Mod5_7.png) |
+|:---|:---|
+| **Substrate Material** <br> ![](./Images/Mod5_8.png) |  | 
 
 ### 5.3 - Adding Die Attach Material and Bond Pads
 
@@ -416,14 +434,24 @@ The main focus of this lab exercise is to build the complete cross-section of a 
     - Set the thickness to -100 microns (-0.1mm) as the DAM lies beneath the die and the substrate
     - Assign the material to _**Modified Eopxy**_
     - **NOTE:** Assign different shades/ colours to adjacent components to easily discern in 3D view.
+   
+| **Die Attach Geometry** <br> ![](./Images/Mod5_9.png) | **Die Attach Thickness** ![](./Images/Mod5_10.png) |
+|:---|:---|
+| **Die Attach Material** <br> ![](./Images/Mod5_11.png) | **Die Attach** <br> ![](./Images/Mod5_12.png) |
 
   - **Step 6 : Create Bond pads on Die and Substrate**
   - Draw a small rectangle and configure its size to to that of the die pad (0.2mm x 0.2mm). We will place the first Die Pad at the co-ordinates (0.2, 0.2, 0.2) so that it sits on top of the die and is at one of the edges.
   - Set the thickness to 5 microns (0.005mm)
 
+| **Die Bond Pad** <br> ![](./Images/Mod5_15.png) |
+|:---|
+
   - Similarly, draw a small rectangle and configure its size to to that of the substrate bond pad (0.2mm x 0.2mm).
   - We will place this Substrate Bind Pad at the co-ordinates (0.2, -0.7, -0.1) so that it sits aligned to the Die bond pad created in the previous step, and also on top of the substrate.
   - Set the substrate bond pad thickness to 10 microns (0.010mm)
+
+| **Substrate Bond Pad** <br> ![](./Images/Mod5_16.png) |
+|:---|
 
 ### 5.4 - Wire Bond Creation and Material Assignment
 
@@ -432,7 +460,12 @@ The main focus of this lab exercise is to build the complete cross-section of a 
     - Connect the centre of the Die Bond pad to the centre of the Substrate Bond Pad. It might be easier to draw the wires from the Top view orientation.
     - Select the Bondwire type as JEDEC 4-point
     - Assign gold as the Bondwire material
+    
+| **Draw the Bondwire connecting the Die & Substrate Pad Centers** <br> ![](./Images/Mod5_17.png) | 
+|:---|
 
+| **Gold Bondwire** <br> ![](./Images/Mod5_18.png) |
+|:---| 
 
 Now, repeat the steps 6 and 7 to create and connect all the die and substrate bond pads using bondwires.
 
@@ -443,4 +476,9 @@ Now, repeat the steps 6 and 7 to create and connect all the die and substrate bo
     - Position at (-1, -1, -0.1) covering the top side of the substrate.
     - Set the thickness to 1.2mm so that it covers the die and the bondwires, while also leaving margin for any laser marking processes
 
+| **Mold** <br> ![](./Images/Mod5_21.png) | 
+|:---|
+
+| ![](./Images/Mod5_22.png) |
+|:---|
 
